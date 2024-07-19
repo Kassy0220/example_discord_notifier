@@ -28,6 +28,7 @@ class MinutesController < ApplicationController
 
     respond_to do |format|
       if @minute.save
+        Discord::Notifier.message(NotificationMessageTemplate.create(:create, course, @minute))
         format.html { redirect_to minute_url(@minute), notice: "Minute was successfully created." }
         format.json { render :show, status: :created, location: @minute }
       else
