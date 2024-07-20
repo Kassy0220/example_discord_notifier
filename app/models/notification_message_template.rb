@@ -1,5 +1,5 @@
 class NotificationMessageTemplate
-  ROLE_ID = 1263629681157214224
+  ROLE_ID = ENV['TEAM_MEMBER_ROLE_ID'].to_i
   def self.create(message_type, course, minute)
     template = case message_type
                when :create
