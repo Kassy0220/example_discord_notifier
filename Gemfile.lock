@@ -100,6 +100,7 @@ GEM
       irb (~> 1.10)
       reline (>= 0.3.8)
     discord-notifier (1.0.3)
+    dotenv (3.1.2)
     drb (2.2.1)
     error_highlight (0.6.0)
     erubi (1.13.0)
@@ -267,6 +268,7 @@ DEPENDENCIES
   capybara
   debug
   discord-notifier
+  dotenv
   error_highlight (>= 0.4.0)
   jbuilder
   jsbundling-rails
